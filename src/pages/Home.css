@@ -1,0 +1,26 @@
+.home {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .portfolio-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  
+  .skills-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    display: inline-block; /* Center align the list */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .skills-list li {
+    background-color: #f0f0f0; /* Light gray background */
+    margin: 5px 0; /* Space between items */
+    padding: 10px; /* Padding for list items */
+    border-radius: 4px; /* Rounded corners */
+  }
+  
