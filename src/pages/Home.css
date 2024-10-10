@@ -1,26 +1,84 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #111;
+  color: white;
+}
+
 .home {
-    text-align: center;
-    margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #111; /* Dark background */
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero Images */
+.hero-images {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  width: 150px;
+  height: 250px;
+  object-fit: cover;
+  margin: 0 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #ff007f, #00d2ff, #ffd700); /* Gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Makes the text transparent to show the gradient */
+  margin-bottom: 10px;
+}
+
+
+.subtext {
+  font-size: 1.5rem;
+  color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-image {
+    width: 100px;
+    height: 150px;
   }
-  
-  .portfolio-image {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-    border-radius: 8px;
+
+  .name {
+    font-size: 2.5rem;
   }
-  
-  .skills-list {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
-    display: inline-block; /* Center align the list */
-    text-align: left; /* Align text to the left */
+
+  .subtext {
+    font-size: 1.2rem;
   }
-  
-  .skills-list li {
-    background-color: #f0f0f0; /* Light gray background */
-    margin: 5px 0; /* Space between items */
-    padding: 10px; /* Padding for list items */
-    border-radius: 4px; /* Rounded corners */
-  }
-  
+}

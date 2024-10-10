@@ -1,32 +1,36 @@
 import React from 'react';
-// import myImage from '../assets/my-image.jpg'; // Update the path to your image file
-import './Home.css'; // Import the CSS file
+import './Home.css';
 
 const Home = () => {
+  // Inline styles for background image
+  const backgroundStyle = {
+    backgroundImage: "url('/icons/background1.jpg')",  // Image path in the public folder
+    backgroundSize: 'cover',                          // Make sure the image covers the entire section
+    backgroundPosition: 'center',                     // Center the image
+    backgroundRepeat: 'no-repeat',                    // Do not repeat the image
+    height: '100vh',                                  // Full height of the viewport
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+  };
+
   return (
-    <div className="home">
-      <div className="hero">
-        {/* <img src={myImage} alt="My Portfolio" className="portfolio-image" /> */}
-        <div className="hero-text">
-          <h1>Welcome to My Portfolio</h1>
-          <p>I am a software developer with expertise in:</p>
-          <ul className="skills-list">
-            <li>Python</li>
-            <li>Django</li>
-            <li>Flask</li>
-            <li>PostgreSQL</li>
-            <li>React</li>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>APIs (REST & GraphQL)</li>
-            <li>Version Control (Git)</li>
-            <li>Responsive Design</li>
-          </ul>
-          <p>
-            I create efficient and scalable solutions that enhance user experience.
-            Explore my projects and get in touch for collaboration!
-          </p>
-        </div>
+    <div style={backgroundStyle}>  {/* Apply inline styles here */}
+      <div className="container">
+        {/* Hero Section */}
+        <section className="hero-section">
+          <div className="hero-images">
+            {/* Replace with your own images */}
+            {/* <img src="/icons/myImage.jpg" alt="Vedhagiri S" className="hero-image" /> */}
+            <img src="/icons/myImage1.jpg" alt="Vedhagiri S" className="hero-image" />
+          </div>
+
+          <div className="hero-text">
+            <h1 className="name">Vedhagiri S</h1>
+            <p className="subtext">Full Stack Developer</p>
+          </div>
+        </section>
       </div>
     </div>
   );
