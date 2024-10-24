@@ -51,20 +51,36 @@ body {
   border-radius: 20px;
 }
 
+/* Stylish Font for Name */
 .name {
-  font-size: 3rem;
+  font-size: 3.5rem; /* Bigger size */
   font-weight: bold;
   text-transform: uppercase;
+  font-family: 'Poppins', sans-serif; /* Custom font, add link in HTML */
   background: linear-gradient(90deg, #ff007f, #00d2ff, #ffd700); /* Gradient colors */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; /* Makes the text transparent to show the gradient */
   margin-bottom: 10px;
+  letter-spacing: 2px; /* Add spacing between letters */
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8); /* Add shadow to text */
 }
 
-
 .subtext {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #ddd;
+  font-family: 'Roboto', sans-serif; /* Custom font for subtext */
+  margin-bottom: 10px;
+}
+
+.inspiration-text {
+  font-size: 1.2rem;
+  color: #aaa;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 15px;
 }
 
 /* Responsive Design */

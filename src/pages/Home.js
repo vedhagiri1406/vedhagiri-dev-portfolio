@@ -4,7 +4,7 @@ import './Home.css';
 const Home = () => {
   // Inline styles for background image
   const backgroundStyle = {
-    backgroundImage: "url('/icons/background1.jpg')",  // Image path in the public folder
+    backgroundImage: "url('/icons/background3.png')",  // Image path in the public folder
     backgroundSize: 'cover',                          // Make sure the image covers the entire section
     backgroundPosition: 'center',                     // Center the image
     backgroundRepeat: 'no-repeat',                    // Do not repeat the image
@@ -22,13 +22,13 @@ const Home = () => {
         <section className="hero-section">
           <div className="hero-images">
             {/* Replace with your own images */}
-            {/* <img src="/icons/myImage.jpg" alt="Vedhagiri S" className="hero-image" /> */}
             <img src="/icons/myImage1.jpg" alt="Vedhagiri S" className="hero-image" />
           </div>
 
           <div className="hero-text">
-            <h1 className="name">Vedhagiri S</h1>
+            <h1 className="name">Vedhagiri S</h1> {/* Name with custom font */}
             <p className="subtext">Full Stack Developer</p>
+            <p className="inspiration-text">"Empowering Ideas with Code: Transforming challenges into efficient, scalable, and elegant solutions."</p>
           </div>
         </section>
       </div>

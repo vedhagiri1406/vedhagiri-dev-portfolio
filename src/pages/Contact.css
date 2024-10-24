@@ -1,0 +1,113 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000; /* Black background */
+    color: #f4f4f4; /* Light text */
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+  
+.contact-heading {
+    font-size: 2.5rem;
+    color: #ffcc00; /* Heading color */
+    margin-bottom: 20px;
+}
+  
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form */
+    width: 100%;         /* Full width for mobile responsiveness */
+    max-width: 600px;     /* Limit max width for larger screens */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Add slight transparency to background */
+    border-radius: 10px;
+}
+
+.contact-form label {
+    align-self: flex-start; /* Align labels to the left */
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #ffcc66;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;  /* Ensure the input elements span the full width */
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ffcc66;
+    border-radius: 5px;
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-form button {
+    width: 100%;  /* Full width button */
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #ffcc00;
+}
+
+/* Email address display */
+.contact-email {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #ffcc66;
+}
+
+.contact-email a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.contact-email a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-form {
+        width: 90%;  /* Smaller width for mobile devices */
+    }
+
+    .contact-heading {
+        font-size: 2rem;  /* Reduce the heading size for mobile devices */
+    }
+
+    .contact-form button {
+        font-size: 1rem;  /* Adjust button size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form label {
+        font-size: 1rem;  /* Reduce label size for very small screens */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;  /* Smaller input field size */
+    }
+
+    .contact-form button {
+        padding: 8px;  /* Smaller button padding */
+    }
+}
